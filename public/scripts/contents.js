@@ -32,7 +32,7 @@ const check = () => {
       console.log(totalTime)
       alert('Exceeded the timeLimit: Take a break!')
     }
-  } else if (totalTime >= 60000) {
+  } else if (totalTime >= 10800000) {
     console.log(totalTime)
     alert('3 hours has passed... Take a break!')
   }
