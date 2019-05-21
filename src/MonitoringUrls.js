@@ -9,7 +9,6 @@ class MonitoringUrls extends Component {
     this.state = {
       list: []
     }
-    // this.handleRemove = this.handleRemove.bind(this)
   }
 
   componentDidMount(){
@@ -26,10 +25,6 @@ class MonitoringUrls extends Component {
     })
   }
 
-  // handleRemove(url) {
-  //   chrome.storage.local.remove(url)
-  // }
-
   render() {
     if (this.state.list.length) {
       return (
@@ -39,7 +34,6 @@ class MonitoringUrls extends Component {
               <div className="url-area">
                 <small>{obj.url}</small>
                 <small>Time Limit: {obj.timeLimit} minutes</small>
-                {/* <button type="button" id="removeBtn" value="Remove" onClick={this.handleRemove(obj.url)} /> */}
               </div>
             )
           }
